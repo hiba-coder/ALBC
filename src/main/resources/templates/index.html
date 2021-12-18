@@ -272,9 +272,32 @@
 					<a href="#" title="Home" data-ripple=""><i class="ti-search"></i></a>
 					<div class="searched">
 						<form method="post" class="form-search">
-							<input type="text" placeholder="Search Friend">
-							<button data-ripple><i class="ti-search"></i></button>
+							<input type="text" placeholder="Search Friend" id="serach">
+							<button data-ripple ><i class="ti-search"></i></button>
+
 						</form>
+
+							<ul class="drops-menu" >
+							<li>
+								<div class="cards" id="cards" >
+						       </div>
+
+							</li>
+							</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 					</div>
 				</li>
 				<li><a href="newsfeed.html" title="Home" data-ripple=""><i class="ti-home"></i></a></li>
@@ -566,8 +589,8 @@
 											<img src="images/resources/admin2.jpg" alt="">
 										</figure>
 										<div class="newpst-input">
-											<form method="post">
-												<textarea rows="2" placeholder="write something"></textarea>
+											<form >
+												<textarea rows="2" placeholder="write something" id="publication"></textarea>
 												<div class="attachments">
 													<ul>
 														<li>
@@ -595,7 +618,7 @@
 															</label>
 														</li>
 														<li>
-															<button type="submit">Post</button>
+															<button  onclick="clickreb()">Post</button>
 														</li>
 													</ul>
 												</div>
@@ -605,8 +628,8 @@
 								</div><!-- add post new box -->
 								<div class="loadMore">
 								<div class="central-meta item">
-									<div class="user-post">
-										<div class="friend-info">
+									<div class="user-post" id="user-post">
+										<!--<div class="friend-info">
 											<figure>
 												<img src="images/resources/friend-avatar10.jpg" alt="">
 											</figure>
@@ -775,7 +798,7 @@
 													</div>
 												</li>
 											</ul>
-										</div>
+										</div>-->
 									</div>
 								</div>
 								<div class="central-meta item">
@@ -1586,6 +1609,7 @@
 	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/map-init.js"></script>
+	<script src="js/user.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
 
 </body>	

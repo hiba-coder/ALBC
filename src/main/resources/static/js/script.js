@@ -8,10 +8,13 @@ jQuery(document).ready(function($) {
 	$(this).children('div').addClass('active');
 	return false;
   });
+
+
 //------- remove class active on body
   $("body *").not('.top-area > .setting-area > li').on("click", function() {
 	$(".top-area > .setting-area > li > div").removeClass('active');		
  });
+
 	
 
 //--- user setting dropdown on topbar	
